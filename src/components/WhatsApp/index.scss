@@ -1,13 +1,4 @@
 @import "../../styles/base";
-.whatsapp {
-  width: 25px;
-  height: 25px;
-  color: green;
-  position: sticky;
-  bottom: 0;
-  float: right;
-  margin-right: 10%;
-}
 .icon {
   width: 100px;
   color: #fff;
@@ -22,16 +13,15 @@
   width: 60px;
   height: 60px;
   bottom: 40px;
-  right: -5%;
-  float: right;
+  right: 5%;
   border-radius: 50px;
   text-align: center;
   font-size: 45px;
-  box-shadow: 2px 2px 3px #999;
   z-index: 100;
-  // background-color: #25d366;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   background-color: #4fce5d;
-
   padding: 5px;
   @include apply-at-sm-size {
     font-size: 40px;

@@ -52,7 +52,7 @@ export const AboutUs = () => {
       <div className="about-header">
         <Navbar />
         <div className="aboutHeaderText">
-          <p>Bersama kita ciptakan solusi teknologi digital</p>
+          <p>Bersama Kita Ciptakan Solusi Teknologi Digital</p>
         </div>
       </div>
       <div className="bg-mid-section">

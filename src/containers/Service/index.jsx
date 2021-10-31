@@ -24,7 +24,7 @@ export const Service = () => {
       <div className="serviceHeader">
         <Navbar />
         <div className="service-headerText">
-          <p>Kami akan menciptakan produk digital yang mempunyai nilai seni</p>
+          <p>Kami Akan Menciptakan Produk Digital Yang Mempunyai Nilai Seni</p>
         </div>
       </div>
       <div className="service-top-section">

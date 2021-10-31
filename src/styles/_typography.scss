@@ -16,3 +16,7 @@
     padding: 2rem;
   }
 }
+@mixin textShadow {
+  text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+    #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+}

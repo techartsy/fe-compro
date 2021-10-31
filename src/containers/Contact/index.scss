@@ -17,7 +17,8 @@
   background-size: cover;
 }
 .contact-headerText {
-  // color: $color-white;
+  @include textShadow;
+
   color: $color-cream;
 
   font-size: 48px;

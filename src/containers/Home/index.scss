@@ -41,6 +41,7 @@
   min-height: 700px;
 }
 .home-headerText {
+  @include textShadow;
   color: $color-cream;
   margin-top: 16%;
   font-size: 48px;

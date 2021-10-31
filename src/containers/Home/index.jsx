@@ -72,7 +72,7 @@ const HomePage = () => {
             animateIn="fadeInLeft"
             initiallyVisible={true}
           >
-            <p>Sudah saatnya bersahabat dengan digital</p>
+            <p>Sudah Saatnya Bersahabat Dengan Digital</p>
           </ScrollAnimation>
         </div>
       </div>

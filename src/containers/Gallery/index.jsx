@@ -40,6 +40,7 @@ function SamplePrevArrow(props) {
 }
 
 export const Gallery = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
   const settings = {
     arrows: true,
     slidesToShow: 1,
@@ -47,10 +48,12 @@ export const Gallery = () => {
     swipeToSlide: true,
     infinite: true,
     dots: true,
+    // centerMode: true,
     dotsClass: "slick-dots",
     speed: 1500,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    beforeChange: (current, next) => setActiveIndex(next)
   };
 
   const images = [
@@ -205,7 +208,7 @@ export const Gallery = () => {
       <div className="gallery-header">
         <Navbar />
         <div className="headerText">
-          <p>Abadikan Momen Berharga anda bersama Techartsy Indonesia</p>
+          <p>Abadikan Momen Berharga Anda Bersama Techartsy Indonesia</p>
         </div>
       </div>
       <p className="gallery-title">Kreativitas kami membawa bisnis anda maju</p>
@@ -253,9 +256,9 @@ export const Gallery = () => {
         <p className="gallery-category">Videografi</p>
         <div className="gallery-video-wrapper">
           <Slider className="slider" {...settings}>
-            {videos.map((item) => {
+            {videos.map((item, idx) => {
               return (
-                <div className="offerItemWrapper">
+                <div className={`offerItemWrapper ${idx === activeIndex ? 'active-video' : 'video'}`}>
                   <iframe
                     width="680"
                     height="380"

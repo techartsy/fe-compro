@@ -17,6 +17,8 @@
   min-height: 700px;
 }
 .service-headerText {
+  @include textShadow;
+
   color: $color-cream;
   margin-top: 20%;
   margin-left: 5%;

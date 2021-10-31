@@ -45,7 +45,7 @@ export const ContactUs = () => {
       <div className="contact-header">
         <Navbar />
         <div className="contact-headerText">
-          <p>kami selalu ada untuk anda</p>
+          <p>Kami Selalu Ada Untuk Anda</p>
         </div>
       </div>
       <div className="contact-content-container">
@@ -127,6 +127,7 @@ export const ContactUs = () => {
                 style={{ border: "1px solid black" }}
                 allowfullscreen=""
                 loading="lazy"
+                title="Google Maps"
               ></iframe>
             </div>
             <div className="our-address-section">

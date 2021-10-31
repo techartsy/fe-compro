@@ -17,6 +17,8 @@
   background-size: cover;
 }
 .aboutHeaderText {
+  @include textShadow;
+
   color: $color-cream;
   display: flex;
   margin-top: 15%;
