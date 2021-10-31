@@ -1,0 +1,49 @@
+@import "../../styles/base";
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding-top: 2rem;
+  // margin-top: 1rem;
+  margin-right: 3rem;
+}
+.active {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 5px;
+}
+.logoWrapper {
+  // margin-top: 1rem;
+}
+.logo {
+  margin-top: 5rem;
+  overflow: hidden;
+  height: 45px;
+  display: inline-block;
+  margin: 13px 0 0 41px;
+}
+.menuWrapper {
+  width: 40%;
+  align-items: center;
+}
+
+.menuWrapper ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+.logo:hover {
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: $color-white;
+  font-size: 1rem;
+  line-height: 24px;
+  font-family: "Krona One", sans-serif;
+}
+.link:hover {
+  color: $color-white-on-hover;
+}

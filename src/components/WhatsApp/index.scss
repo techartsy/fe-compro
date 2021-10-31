@@ -1,0 +1,44 @@
+@import "../../styles/base";
+.whatsapp {
+  width: 25px;
+  height: 25px;
+  color: green;
+  position: sticky;
+  bottom: 0;
+  float: right;
+  margin-right: 10%;
+}
+.icon {
+  width: 100px;
+  color: #fff;
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+.wa-icon {
+  color: white;
+}
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: -5%;
+  float: right;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 45px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  // background-color: #25d366;
+  background-color: #4fce5d;
+
+  padding: 5px;
+  @include apply-at-sm-size {
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+  }
+}
+.float {
+  color: #fff;
+}

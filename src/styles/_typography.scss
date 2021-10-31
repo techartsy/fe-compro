@@ -1,0 +1,22 @@
+@mixin body {
+  font-family: "Poppins", sans-serif;
+}
+@mixin directionX {
+  display: flex;
+  flex-direction: row;
+}
+@mixin directionY {
+  display: flex;
+  flex-direction: column;
+}
+@mixin paddedWrapper {
+  padding: 1.8rem;
+
+  @include apply-at-lg-size {
+    padding: 2rem;
+  }
+}
+
+// $ico-next: "\e90f";
+$ico-prev: "\e90d";
+$ico-next: "\e90f";

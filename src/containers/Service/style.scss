@@ -1,0 +1,113 @@
+@import "../../styles/base";
+
+.serviceContainer {
+  overflow-x: hidden;
+  @include body;
+}
+.serviceHeader {
+  background-image: url("../../static/images/service.png");
+  height: 100%;
+  width: 100%;
+  margin-top: -20px;
+  border: none;
+  object-fit: cover;
+  object-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+.service-headerText {
+  color: $color-cream;
+  margin-top: 20%;
+  margin-left: 5%;
+  width: 50%;
+  font-size: 48px;
+}
+.service-title {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+.subservice-icon {
+  width: 80px;
+  height: 80px;
+}
+.service-top-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(215, 243, 245, 1) 0%,
+    rgba(231, 245, 255, 0.7371323529411764) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.dev-service-container {
+  @include directionX;
+  @include content-center;
+  justify-content: space-around;
+  width: 90%;
+}
+.sub-service-title {
+  font-size: 20px;
+}
+// .sub-service-subtitle {
+//   border: 1px solid red;
+//   // font-size: 16px;
+//   // font-size: 20px;
+//   // font-size: 30px;
+// }
+.left {
+  @include directionY;
+  justify-content: space-around;
+  width: 30%;
+  text-align: center;
+}
+.mid {
+  @include directionY;
+  justify-content: space-around;
+  width: 30%;
+  text-align: center;
+}
+.right {
+  @include directionY;
+  justify-content: space-around;
+  width: 30%;
+  text-align: center;
+}
+.content-separator {
+  // margin-top: 30px;
+  margin-bottom: -55px;
+  background: linear-gradient(
+    90deg,
+    rgba(215, 243, 245, 1) 0%,
+    rgba(231, 245, 255, 0.7371323529411764) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.creative-top-content {
+  @include directionX;
+  margin-top: 5%;
+  justify-content: space-around;
+}
+.card-wrapper {
+  width: 30%;
+  text-align: center;
+}
+.service-bottom-section {
+  background: linear-gradient(
+    90deg,
+    rgba(215, 243, 245, 1) 0%,
+    rgba(231, 245, 255, 0.7371323529411764) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.creative-service-container {
+  @include directionY;
+  justify-content: space-between;
+}
+.bottom-separator {
+  margin-bottom: -25px;
+}
+.image-separator {
+}

@@ -1,0 +1,17 @@
+.App {
+  /* text-align: center; */
+  // background-color: #000000;
+  height: 100vh;
+}
+
+.video-wrap {
+  display: inline-block;
+  left: 0;
+  margin: 0 auto;
+  max-width: 80%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  // transform: translateY(-50%);
+  width: 100%;
+}
