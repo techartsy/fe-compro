@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import _ from "lodash";
 import "./index.scss";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer/index";
-import contact from "../../static/images/contact.png";
 import Slider from "react-slick";
 import Whatsapp from "../../components/WhatsApp/index";
 import Prev from "../../static/icon/prev_black.png";
@@ -20,7 +18,7 @@ function SampleNextArrow(props) {
       }}
       onClick={onClick}
     >
-      <img src={Next} />
+      <img src={Next} alt="Next Button" />
     </div>
   );
 }
@@ -36,7 +34,7 @@ function SamplePrevArrow(props) {
       }}
       onClick={onClick}
     >
-      <img src={Prev} />
+      <img src={Prev} alt="Previous Button"/>
     </div>
   );
 }
@@ -44,7 +42,6 @@ function SamplePrevArrow(props) {
 export const Gallery = () => {
   const settings = {
     arrows: true,
-    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
@@ -152,16 +149,36 @@ export const Gallery = () => {
 
   const videos = [
     {
-      source: "https://www.youtube.com/embed/WI73H9jT-Kc",
+      id: 1,
+      title: "Ikrar",
+      image: null,
+      video: 'https://www.youtube.com/embed/WI73H9jT-Kc',
+      caption: "Diesnatalis 40 th GIRIGAHANA",
+      category: "video"
     },
     {
-      source: "https://www.youtube.com/embed/i9oyEHUqAhg",
+      id: 2,
+      title: "Saybia",
+      image: null,
+      video: 'https://www.youtube.com/embed/i9oyEHUqAhg',
+      caption: "Saybia - The Second You Sleep",
+      category: "video"
     },
     {
-      source: "https://www.youtube.com/embed/cu6pclWsxzs",
+      id: 3,
+      title: "Bad English",
+      image: null,
+      video: 'https://www.youtube.com/embed/cu6pclWsxzs',
+      caption: "Bad English - When I See You Smile",
+      category: "video"
     },
     {
-      source: "https://www.youtube.com/embed/VqhCQZaH4Vs",
+      id: 4,
+      title: "Louis Armstrong",
+      image: null,
+      video: 'https://www.youtube.com/embed/WI73H9jT-Kc',
+      caption: "Louis Armstrong - What A Wonderful World",
+      category: "video"
     },
   ];
 
@@ -171,7 +188,6 @@ export const Gallery = () => {
 
   const nextBtn = () => {
     const index = images.findIndex((item) => item.id === selectedImage.id);
-    console.log(index, "masuk function");
     if (index !== images.length - 1) {
       setSelectedImage(images[index + 1]);
     }
@@ -179,7 +195,6 @@ export const Gallery = () => {
 
   const prevBtn = () => {
     const index = images.findIndex((item) => item.id === selectedImage.id);
-    console.log(index, "masuk function");
     if (index !== 0) {
       setSelectedImage(images[index - 1]);
     }
@@ -215,8 +230,8 @@ export const Gallery = () => {
             </a>
           </div>
           <div className="overlay-section">
-            <div className="image-caption">{selectedImage?.title}</div>
-            <div className="image-bottom-info">{selectedImage?.caption}</div>
+            <div className="gallery-image-title">{selectedImage?.title}</div>
+            <div className="gallery-image-caption">{selectedImage?.caption}</div>
           </div>
         </div>
         <div className="image-thumbnail">
@@ -244,14 +259,14 @@ export const Gallery = () => {
                   <iframe
                     width="680"
                     height="380"
-                    src={item.source}
+                    src={item.video}
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen="allowfullscreen"
                   ></iframe>
                   <div>
-                    <p className="gallry-caption">Caption lorem ipsum dolor</p>
+                    <p className="gallery-caption">{item.caption}</p>
                   </div>
                 </div>
               );

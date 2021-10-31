@@ -19,7 +19,6 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import chevronRight from "../../static/images/chevron-right.png";
 import { useDispatch } from "react-redux";
 import { requestHelloWorld } from "../../store/actions/index";
-// import ScrollAnimation from "react-animation-on-scroll";
 
 const HomePage = () => {
   const { height, width } = useWindowDimensions();

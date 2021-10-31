@@ -1,5 +1,4 @@
 import { call, put, takeEvery, takeLatest } from "redux-saga/effects";
-// import Api from "...";
 import {
   HELLO_WORLD,
   RECEIVE_HELLO_WORLD,
@@ -20,9 +19,7 @@ function* helloWorld(action) {
 
 function* submitContact({ value }) {
   try {
-    console.log(value, "<< value");
     const response = yield call(postContact, value);
-    console.log(response, "<< response saga");
   } catch (error) {
     console.log(error);
   }

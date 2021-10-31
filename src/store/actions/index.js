@@ -10,7 +10,6 @@ export const requestHelloWorld = () => {
   };
 };
 export const receiveHelloWorld = (text) => {
-  console.log(text);
   return {
     type: RECEIVE_HELLO_WORLD,
     text,

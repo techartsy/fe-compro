@@ -5,7 +5,6 @@ import {
   ContactPage,
   GalleryPage,
   PortfolioPage,
-  // NotFoundPage,
 } from "./containers";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";

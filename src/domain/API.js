@@ -30,7 +30,6 @@ const callAPI = (endpoint, method, headers = {}, params = {}, data = {}) => {
 };
 
 export const getAllGallery = () => {
-  console.log("masuk api nih");
   callAPI(urls.get_all_gallery, "get", {});
 };
 
