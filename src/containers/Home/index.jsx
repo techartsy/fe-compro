@@ -142,7 +142,7 @@ const HomePage = () => {
           {services &&
             services.map((item, idx) => {
               return (
-                <ScrollAnimation delay={idx + 1000} animateIn="fadeIn">
+                <ScrollAnimation animateIn="fadeIn">
                   <div key={idx} className="service-card">
                     <img
                       src={item.image}
