@@ -1,15 +1,10 @@
 import React from 'react';
 import './index.scss';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { stack as Menu } from 'react-burger-menu';
-import Logo from '../../static/images/logo.png'
 
 
 const Sidebar = () => {
-  const history = useHistory();
-  const goToHome = () => {
-    history.push('/');
-  }
   return (
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     <div className='sidebarContainer'>

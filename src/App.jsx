@@ -5,6 +5,7 @@ import {
   ContactPage,
   GalleryPage,
   PortfolioPage,
+  PortfolioItem,
 } from "./containers";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ function App() {
             <Route exact path="/contact" component={ContactPage} />
             <Route exact path="/gallery" component={GalleryPage} />
             <Route exact path="/portfolio" component={PortfolioPage} />
+            <Route exact path="/portfolio/:id" component={PortfolioItem} />
           </div>
         </Switch>
       </Router>

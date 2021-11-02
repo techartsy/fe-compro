@@ -1,3 +1,4 @@
+import _ from "lodash";
 var CryptoJS = require("crypto-js");
 
 const encryptData = (data) => {
@@ -19,4 +20,8 @@ const decryptData = (data) => {
   return originalText;
 };
 
-export { encryptData, decryptData };
+const removeDash = (word) => {
+  word = _.replace(word, "-", " ");
+  return word;
+};
+export { encryptData, decryptData, removeDash };

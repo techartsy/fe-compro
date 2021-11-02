@@ -1,0 +1,60 @@
+@import "../../styles/base";
+
+.portfolio-detail-container {
+  overflow-x: hidden;
+  @include body;
+}
+.portfolio-detail-header {
+  height: 100%;
+  width: 100%;
+  margin-top: -20px;
+  border: none;
+  object-fit: cover;
+  object-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+.portfolio-detail-title {
+  color: $color-white;
+  bottom: 10px;
+  margin-top: 30%;
+  font-size: 38px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 5px;
+}
+.detail-content-container {
+  @include directionX;
+  @include paddedWrapper;
+  border-top: 2px solid $color-white;
+  border-bottom: 2px solid $color-white;
+  color: $color-white;
+  justify-content: space-around;
+  background: linear-gradient(359.04deg, #505050 7.93%, #1d1c1c 66.16%);
+}
+.detail-description-section {
+  width: 35%;
+}
+.description-title {
+  border-bottom: 1px solid $color-white;
+  padding-bottom: 1rem;
+}
+.category-title {
+  border-bottom: 1px solid $color-white;
+  padding-bottom: 1rem;
+}
+.detail-category-section {
+  width: 35%;
+}
+.secondimage {
+  width: 100%;
+}
+.portfolio-detail-result {
+  @include paddedWrapper;
+  @include content-center;
+  text-align: center;
+  width: 60%;
+  letter-spacing: 0.1em;
+}

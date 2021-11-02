@@ -51,7 +51,6 @@
 .media-link {
   @include directionX;
   width: 8%;
-  // display: flex;
   justify-content: space-between;
   position: relative;
   align-items: center;
@@ -70,15 +69,10 @@
   top: -5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  // border: 1px solid red;
   background: #9e9e9d;
   border-radius: 30%;
-  // opacity: 80%;
-
-  // filter: drop-shadow(16px 16px 20px blue);
 }
 .copywright {
-  // margin-top: 3rem;
   text-align: right;
   font-size: 12px;
   font-weight: bold;

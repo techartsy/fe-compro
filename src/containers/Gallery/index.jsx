@@ -193,6 +193,8 @@ export const Gallery = () => {
     const index = images.findIndex((item) => item.id === selectedImage.id);
     if (index !== images.length - 1) {
       setSelectedImage(images[index + 1]);
+    } else {
+      setSelectedImage(images[0])
     }
   };
 
@@ -200,6 +202,8 @@ export const Gallery = () => {
     const index = images.findIndex((item) => item.id === selectedImage.id);
     if (index !== 0) {
       setSelectedImage(images[index - 1]);
+    } else {
+      setSelectedImage(images[images.length - 1])
     }
   };
 

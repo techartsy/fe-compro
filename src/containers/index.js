@@ -5,3 +5,4 @@ export { default as ServicePage } from "./Service/index";
 export { default as ContactPage } from "./Contact/index";
 export { default as PortfolioPage } from "./Portfolio/index";
 export { default as NotFoundPage } from "./NotFound/index";
+export { default as PortfolioItem } from "./PortfolioItem/index";

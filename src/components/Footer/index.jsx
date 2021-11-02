@@ -47,10 +47,10 @@ export const Footer = () => {
                 <img src={LinkedIn} alt="instagram" className="media-icon" />
               </a>
               <a href="https://www.instagram.com/rinotoharto/">
-                <img src={Youtube} alt="instagram" className="media-icon" />
+                <img src={Behance} alt="instagram" className="media-icon" />
               </a>
               <a href="https://www.instagram.com/rinotoharto/">
-                <img src={Behance} alt="instagram" className="media-icon" />
+                <img src={Youtube} alt="instagram" className="media-icon" />
               </a>
             </div>
           </div>
