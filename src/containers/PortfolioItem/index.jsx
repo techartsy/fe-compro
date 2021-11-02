@@ -9,7 +9,7 @@ import './style.scss';
 const PortfolioItem = () => {
   const location = useLocation();
   const { portfolio } = location.state;
-  console.log(portfolio, '<< location')
+
   return (
     <div className="portfolio-detail-container">
       <div className="portfolio-detail-header" style={{ backgroundImage: `url(${portfolio.mainimage})`}}>
