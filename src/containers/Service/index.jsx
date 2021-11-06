@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import Animation1 from "../../static/animation/8.json";
 import Development from "../../static/animation/development.json";
 import laptop from "../../static/icon/laptop.png";
 import mobile from "../../static/icon/mobile.png";
@@ -37,7 +36,7 @@ export const Service = () => {
           autoplay
           loop
           src={Development}
-          style={{ height: "450px", width: "450px" }}
+          className="service-animation"
         >
           <Controls
             visible={false}
@@ -139,7 +138,7 @@ export const Service = () => {
         </div>
         <div className="creative-service-container">
           <div className="creative-top-content">
-            <img src={photo_ilustration} alt="photography" />
+            <img src={photo_ilustration} alt="photography" className="service-ilustration" />
             <div className="card-wrapper">
               <div className="sub-service-card">
                 <img
@@ -158,7 +157,7 @@ export const Service = () => {
               </div>
             </div>
           </div>
-          <div className="creative-top-content">
+          <div className="creative-bottom-content">
             <div className="card-wrapper">
               <div className="sub-service-card">
                 <img
@@ -177,7 +176,7 @@ export const Service = () => {
                 </p>
               </div>
             </div>
-            <img src={video_ilustration} alt="photography" />
+            <img src={video_ilustration} alt="videography" className="service-ilustration" />
           </div>
         </div>
         <div className="bottom-separator">

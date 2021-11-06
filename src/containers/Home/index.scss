@@ -32,20 +32,36 @@
   background-image: url("../../static/images/home.png");
   height: 100%;
   width: 100%;
-  margin-top: -20px;
+  top: 0;
   border: none;
   object-fit: cover;
-  object-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 700px;
+
+  @include apply-at-sm-md-size {
+    min-height: 442px;
+  }
+  @include apply-at-lg-size {
+    min-height: 700px;
+  }
 }
 .home-headerText {
   @include textShadow;
   color: $color-cream;
-  margin-top: 16%;
+  padding-top: 16%;
   font-size: 48px;
   text-align: center;
+  @include apply-at-sm-size {
+    @include content-center;
+    width: 90%;
+    font-size: 1.2rem;
+    padding-top: 50%;
+    height: auto;
+  }
+  @include apply-at-md-size {
+    font-size: 1.2rem;
+    padding-top: 20%;
+  }
 }
 
 .infoSection {
@@ -53,12 +69,30 @@
   width: 90%;
   display: flex;
   justify-content: space-around;
+  @include apply-at-sm-size {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
+}
+.animation-section {
+  height: 391px;
+  width: 585px;
+  @include apply-at-sm-size {
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+  }
 }
 .subHeader {
   text-align: center;
   color: black;
   font-size: 32px;
   margin: 63px 0 50px;
+  @include apply-at-sm-size {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
 .shadow {
@@ -70,6 +104,12 @@
   padding: 2rem;
   border-radius: 15px;
   margin-top: 10px;
+  @include apply-at-sm-size {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    box-shadow: none;
+  }
 }
 .infoText {
   position: absolute;
@@ -79,12 +119,20 @@
   top: 40px;
   left: 40px;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
   display: flex;
   align-items: center;
   background-color: #e5eaff;
   font-size: 20px;
   border-radius: 15px;
+  @include apply-at-sm-size {
+    width: 100%;
+    top: 20px;
+    height: 150px;
+    font-size: 12px;
+    padding: 14px;
+    left: 20px;
+  }
 }
 
 .subHeader-service {
@@ -92,16 +140,28 @@
   color: black;
   font-size: 32px;
   margin: 50px 0;
+  @include apply-at-sm-md-size {
+    font-size: 14px;
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
 }
 
 .serviceSection {
   background-color: #ffb319;
   padding: 2rem;
   margin-top: 100px;
+  @include apply-at-sm-md-size {
+    margin-top: 5%;
+  }
 }
 .service-content {
-  display: flex;
+  @include directionX;
   justify-content: space-around;
+  @include apply-at-sm-md-size {
+    @include directionY;
+    justify-content: space-around;
+  }
 }
 .actionBtn {
   @include content-center;
@@ -112,17 +172,50 @@
   max-height: 45px;
   border-radius: 15px;
   background-color: #ffb319;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid $color-black;
   color: $color-black;
   font-size: 17px;
+
   margin-top: 70px;
+  @include apply-at-sm-md-size {
+    box-shadow: none;
+    border: 1px solid black;
+    font-size: 12px;
+    width: 130px;
+  }
+}
+.button:hover {
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: scale(1.1, 1.1);
+  }
+  20%,
+  80% {
+    transform: scale(1, 1);
+  }
+  30%,
+  50%,
+  70% {
+    transform: scale(1.1, 1.1);
+  }
+  40%,
+  60% {
+    transform: scale(1, 1);
+  }
 }
 .actionBtn:hover {
+  animation: shake 8s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
   cursor: pointer;
 }
 .scaleup-section {
   @include directionY;
   padding: 2%;
+  margin-bottom: 100px;
 }
 .scaleup-text {
   @include directionX;
@@ -133,24 +226,57 @@
   color: $color-black;
   width: 38%;
   text-align: center;
+  @include apply-at-sm-md-size {
+    @include content-center;
+    margin-top: 10%;
+    width: 60%;
+    font-size: 14px;
+  }
 }
 .scaleup-img {
   width: 710px;
   height: 396px;
   align-self: flex-end;
   margin-top: -0.5rem;
+  @include apply-at-sm-md-size {
+    @include content-center;
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+  }
+}
+
+.scaleup-img img {
+  @include apply-at-sm-md-size {
+    @include content-center;
+    width: 100%;
+  }
 }
 
 .service-card {
   text-align: center;
   margin: 0 22px;
 }
+
+.service-card img {
+  @include apply-at-sm-md-size {
+    width: 74px;
+    height: auto;
+  }
+}
+
 .service-title {
   font-size: 24px;
+  @include apply-at-sm-md-size {
+    font-size: 16px;
+  }
 }
 .service-description {
   text-align: center;
   font-size: 16px;
+  @include apply-at-sm-md-size {
+    font-size: 14px;
+  }
 }
 .service-img {
 }
@@ -205,7 +331,14 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   text-align: center;
   border-radius: 14px;
-  width: 45%;
+  width: 100%;
+  height: 100%;
+  @include apply-at-sm-md-size {
+    @include content-center;
+    width: 90%;
+    margin-bottom: 24px;
+    box-shadow: none;
+  }
 }
 .content img {
   height: 81%;
@@ -229,11 +362,17 @@
   font-size: 24px;
   margin-bottom: 19px;
   padding-top: 2px;
+  @include apply-at-sm-md-size {
+    font-size: 14px;
+  }
 }
 
 .subtitle {
   font-size: 16px;
   width: 100%;
+  @include apply-at-sm-md-size {
+    font-size: 10px;
+  }
 }
 
 .service-link {
@@ -280,8 +419,7 @@
   text-align: center;
   filter: drop-shadow(0px -12px 3px rgba(0, 0, 0, 0.25));
   @include apply-at-sm-size {
-    margin: 5rem 0;
-    height: 300px;
+    height: 70px;
   }
 }
 .right-section {
@@ -293,15 +431,20 @@
   padding-left: 7rem;
   @include apply-at-sm-size {
     margin-left: 0;
+    margin-top: 10%;
     padding-right: 5rem;
     padding-left: 4rem;
-    height: 100px;
-    margin-right: -1rem;
+    height: 80%;
     font-size: 20px;
-    margin-right: -5rem;
-    width: 50%;
+    margin-left: -7rem;
+    width: 40%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+  @include apply-at-md-size {
+    margin-top: 5%;
+    width: 90%;
+    margin-left: -60%;
   }
 }
 .link-header {
@@ -310,8 +453,14 @@
   font-size: 26px;
   padding: 0;
   @include apply-at-sm-size {
+    margin-top: -10px;
+    width: 100%;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+  }
+  @include apply-at-md-size {
+    font-size: 16px;
+    margin-left: 35%;
   }
 }
 
@@ -325,8 +474,18 @@
   font-size: 20px;
   width: 50%;
   @include apply-at-sm-size {
-    text-align: left;
-    font-size: 12px;
+    margin-left: 35%;
+    font-size: 10px;
+    width: 100%;
+    margin-top: -10px;
+  }
+  @include apply-at-md-size {
+    // border: 1px solid green;
+    font-size: 14px;
+    width: 30%;
+    margin-left: 57%;
+    margin-top: 2%;
+    text-align: center;
   }
 }
 .link-bottom:hover {
@@ -337,7 +496,8 @@
   margin-left: 2rem;
   margin-top: 11px;
   @include apply-at-sm-size {
-    width: 50%;
+    width: 10px;
+    height: auto;
     margin-left: 10px;
   }
 }

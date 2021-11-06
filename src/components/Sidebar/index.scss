@@ -1,15 +1,19 @@
-@import '../../styles/base'; 
+@import "../../styles/base";
 .sidebarContainer {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
-} 
+  // margin-top: 1rem;
+  height: 100%;
+  // padding-top: 1rem;
+  // top: 0;
+  z-index: 9999;
+}
 .bm-burger-button {
   position: relative;
   width: 36px;
   height: 30px;
   right: 30px;
-  top: 10px;
+  top: 1.5rem;
   color: white;
   height: 25px;
   width: 30px;
@@ -18,7 +22,6 @@
   background: white;
 }
 .bm-burger-bars-hover {
-  // background: #a90000;
 }
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
@@ -31,21 +34,26 @@
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  background: #0a1931;
   ::-webkit-scrollbar {
     display: none;
   }
 }
 .bm-menu {
   position: relative;
-  background: #0A1931;
-  // background: #132238;
+  background: #0a1931;
   padding: 5em 1.5em 0;
   text-align: center;
-  font-size: 1.15em;
+  font-size: 10px;
   top: -40px;
   @include apply-at-sm-size {
     top: -35px;
   }
+}
+.sidebar-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
 }
 .bm-morph-shape {
   fill: #373a47;

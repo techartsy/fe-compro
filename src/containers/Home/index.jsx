@@ -32,7 +32,7 @@ const HomePage = () => {
       image: laptop,
       title: "Web Application",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus augue in vestibulum lacus velit varius nec amet. Ante integer purus cras leo justo.",
+        "Memudahkan anda dalam mengolah data pada usaha/pekerjaan anda dengan mudah, cepat, serta user friendly",
     },
     {
       image: movie,
@@ -50,7 +50,7 @@ const HomePage = () => {
       image: invitation,
       title: "Digital Invitation",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus augue in vestibulum lacus velit varius nec amet. Ante integer purus cras leo justo.",
+        "Membantu anda dalam menyampaikan kabar gembira dengan cepat, hemat, serta ramah lingkungan",
     },
   ];
 
@@ -96,7 +96,7 @@ const HomePage = () => {
             autoplay
             loop
             src={Animation4}
-            style={{ height: "391px", width: "585px" }}
+            className="animation-section"
           >
             <Controls
               visible={false}
@@ -111,19 +111,20 @@ const HomePage = () => {
         </strong>
       </div>
       <div className="section-3">
-        <div className="content">
-          <div className="contentHeaderWrapper">
-            <div className="contentHeader">
-              <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+          <div className="content">
+            <div className="contentHeaderWrapper">
+              <div className="contentHeader">
                 <p>Development</p>
-              </ScrollAnimation>
+              </div>
+              <div className="subtitle">
+                <p>Bagaimana Digital Branding Dapat Membantu Bisnis Anda</p>
+              </div>
             </div>
-            <div className="subtitle">
-              <p>Bagaimana Digital Branding Dapat Membantu Bisnis Anda</p>
-            </div>
+            <img src={image2} alt="development" />
           </div>
-          <img src={image2} alt="development" />
-        </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight" duration={2}>
         <div className="content">
           <div className="contentHeaderWrapper">
             <div className="contentHeader">
@@ -135,6 +136,7 @@ const HomePage = () => {
           </div>
           <img src={image3} alt="creative-design" />
         </div>
+        </ScrollAnimation>
       </div>
       <div className="serviceSection">
         <div className="service-content">
@@ -161,9 +163,11 @@ const HomePage = () => {
               );
             })}
         </div>
-        <div className="actionBtn" onClick={goToService}>
-          <p>Lanjutkan</p>
-        </div>
+        <ScrollAnimation duration={1.5} animateIn="fadeIn">
+          <div className="actionBtn" onClick={goToService}>
+            <p>Lanjutkan</p>
+          </div>
+        </ScrollAnimation>
       </div>
       <div className="scaleup-section">
         <div className="scaleup-text">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer/index";
 import Whatsapp from "../../components/WhatsApp/index";
@@ -13,6 +14,7 @@ export const ContactUs = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const dispatch = useDispatch();
+  const { width } = useWindowDimensions();
   const changeName = (e) => {
     setName(e.target.value);
   };
@@ -60,10 +62,12 @@ export const ContactUs = () => {
         <div className="contact-content-wrapper">
           <div className="form">
             <div className="form-title">
-              <p>Tinggalkan kami pesan</p>
+              <strong>
+                <p>Tinggalkan kami pesan</p>
+              </strong>
             </div>
             <form id="form1" onSubmit={(e) => onSubmit(e)}>
-              <label className="label">Nama Anda (required)</label>
+                <label className="label">Nama Anda (required)</label>
               <br></br>
               <input
                 required
@@ -73,7 +77,7 @@ export const ContactUs = () => {
                 onChange={(e) => changeName(e)}
               />
               <br />
-              <label className="label">Email Anda (required)</label>
+                <label className="label">Email Anda (required)</label>
               <br></br>
               <input
                 required
@@ -83,7 +87,7 @@ export const ContactUs = () => {
                 onChange={(e) => chageEmail(e)}
               />
               <br />
-              <label className="label">Nomor Anda (required)</label>
+                <label className="label">Nomor Anda (required)</label>
               <br></br>
               <input
                 required
@@ -93,7 +97,7 @@ export const ContactUs = () => {
                 onChange={(e) => changeNumber(e)}
               />
               <br />
-              <label className="label">Subject</label>
+                <label className="label">Subject</label>
               <br></br>
               <input
                 required
@@ -103,13 +107,13 @@ export const ContactUs = () => {
                 onChange={(e) => changeSubject(e)}
               />
               <br />
-              <label className="label">Pesan Anda</label>
+                <label className="label">Pesan Anda</label>
               <br></br>
               <textarea
                 required
                 className="textArea"
                 rows="10"
-                cols="86"
+                cols={width === 'sm' || width === 'md' ? "42" : "86"}
                 value={message}
                 onChange={(e) => changeMessage(e)}
               />
@@ -122,8 +126,8 @@ export const ContactUs = () => {
             <div className="maps">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.608829500092!2d106.79176161431108!3d-6.3150056635543494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eff9c02320a7%3A0xe6d1219a3f773486!2sTechartsy%20Indonesia!5e0!3m2!1sid!2sid!4v1628262562966!5m2!1sid!2sid"
-                width="540"
-                height="500"
+                width={width === 'lg' ? "540" : '320'}
+                height={width === 'lg' ? "500" : '300'}
                 style={{ border: "1px solid black" }}
                 allowfullscreen=""
                 loading="lazy"
@@ -144,18 +148,7 @@ export const ContactUs = () => {
                 <p className="item">Depok || 16515</p>
               </div>
               <div className="our-address-contact">
-                <p className="item">085155305018</p>
                 <p className="item">techarty.indonesia@gmail.com</p>
-              </div>
-              <div className="our-address-ops-hour">
-                <strong>
-                  <u>
-                    <p className="item">OPENING HOURS</p>
-                  </u>
-                </strong>
-                <strong>
-                  <p className="item">MONDAY TO FRIDAY : 9 AM to 5 PM</p>
-                </strong>
               </div>
             </div>
           </div>

@@ -34,8 +34,7 @@ const PortfolioItem = () => {
         <img className="secondimage" src={portfolio.secondimage} alt={`${portfolio.title}`} />
       </div>
       <div className="portfolio-detail-result">
-        <p>Perkembangan teknologi yang pesat membuat kita dengan mudah memberikan dan mendapatakan kabar gembira untuk sesama. Undangan digital berbasis web lebih atraktif, interaktif, menghemat waktu, biaya, dan ramah lingkungan.
-kami dapat membantu anda dalam hal ini.</p>
+        <p>{portfolio.result}</p>
       </div>
       <Whatsapp />
       <Footer />

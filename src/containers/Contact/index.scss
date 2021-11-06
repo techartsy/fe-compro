@@ -2,12 +2,10 @@
 
 .contact-container {
   @include body;
-  height: 100vh;
   overflow-x: hidden;
 }
 .contact-header {
   background-image: url("../../static/images/contact.png");
-  height: 100%;
   width: 100%;
   margin-top: -20px;
   border: none;
@@ -15,6 +13,12 @@
   object-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  @include apply-at-sm-md-size {
+    min-height: 442px;
+  }
+  @include apply-at-lg-size {
+    min-height: 700px;
+  }
 }
 .contact-headerText {
   @include textShadow;
@@ -24,7 +28,15 @@
   font-size: 48px;
   text-align: right;
   padding-right: 8%;
-  margin-top: 30%;
+  padding-top: 30%;
+  @include apply-at-sm-md-size {
+    @include content-center;
+    font-size: 18px;
+    text-align: center;
+    width: 60%;
+    padding-top: 80%;
+    padding-left: 5%;
+  }
 }
 .contact-content-container {
   background-image: url("../../static/images/contact-form.png");
@@ -32,8 +44,13 @@
   border: none;
   object-fit: cover;
   object-position: top;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   background-size: cover;
+  @include apply-at-sm-md-size {
+    @include directionY;
+    background-position: center;
+    width: 100%;
+  }
 }
 .contact-title {
   @include content-center;
@@ -41,6 +58,10 @@
   width: 83%;
   text-align: center;
   margin-bottom: 5%;
+  @include apply-at-sm-md-size {
+    font-size: 12px;
+    margin-bottom: 2%;
+  }
 }
 .contact-content-wrapper {
   @include content-center;
@@ -48,18 +69,35 @@
   width: 90%;
   display: flex;
   justify-content: space-around;
+  @include apply-at-sm-md-size {
+    @include directionY;
+    margin-top: 0;
+    justify-content: space-around;
+  }
 }
 .form {
   width: 50%;
   margin-bottom: 111px;
+  @include apply-at-sm-md-size {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .form-title {
   font-size: 20px;
   margin-bottom: 63px;
+  @include apply-at-sm-md-size {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 10%;
+  }
 }
 .label {
   font-size: 15px;
   margin-bottom: 20px;
+  @include apply-at-sm-md-size {
+    font-size: 12px;
+  }
 }
 .input {
   margin-top: 20px;
@@ -68,13 +106,19 @@
   height: 40px;
   padding-left: 1rem;
   border: 1px solid #000000;
+  @include apply-at-sm-size {
+    width: 300px;
+  }
+  @include apply-at-md-size {
+    width: 100%;
+  }
 }
 .textArea {
   margin-top: 20px;
 }
 .submit-button {
-  background: #c4c4c4;
-  border-radius: 50px;
+  background: $color-white;
+  border-radius: 10px;
   float: right;
   width: 95px;
   margin-top: 20px;
@@ -84,19 +128,33 @@
   width: 50%;
   margin-left: 5%;
   padding: 4.8rem 0;
+  @include apply-at-sm-md-size {
+    width: 100%;
+    padding: 1rem 0;
+    margin-left: 0;
+  }
 }
 
 .our-address-section {
   @include content-center;
   width: 70%;
   font-size: 16px;
+  @include apply-at-sm-md-size {
+    margin-left: 0;
+  }
 }
 .our-address-title {
   font-size: 20px;
+  @include apply-at-sm-md-size {
+    font-size: 14px;
+  }
 }
 .our-address-mid .item {
   margin-top: 2px;
   margin-bottom: 2px;
+  @include apply-at-sm-md-size {
+    font-size: 12px;
+  }
 }
 .our-address-contact {
   margin-top: 1.5rem;
@@ -104,6 +162,9 @@
 .our-address-contact .item {
   margin-bottom: 2px;
   margin-top: 2px;
+  @include apply-at-sm-md-size {
+    font-size: 12px;
+  }
 }
 .our-address-ops-hour {
   margin-top: 0.5rem;

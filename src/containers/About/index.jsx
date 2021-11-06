@@ -9,12 +9,10 @@ import daniel from "../../static/images/daniel.png";
 import agung from "../../static/images/agung.png";
 import Whatsapp from "../../components/WhatsApp/index";
 import topWave from "../../static/images/top_wave.png";
-import Animation2 from "../../static/animation/2.json";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import "./index.scss";
 import Footer from "../../components/Footer/index";
 
-export const AboutUs = () => {
+const AboutUs = () => {
   const teams = [
     {
       image: agung,
@@ -60,8 +58,8 @@ export const AboutUs = () => {
           <div className="stack">
             <img src={topWave} alt="wave" className="top-wave" />
             <div className="about-content">
-              <div>
-                <img src={image} alt="About-us" />
+              <div className="about-image-wrapper">
+                <img src={image} alt="About-us" className="about-image" />
               </div>
               <div className="about-desc">
                 <p>
@@ -131,7 +129,7 @@ export const AboutUs = () => {
             {teams.map((item, idx) => {
               return (
                 <div className="team-item">
-                  <img src={item.image} />
+                  <img src={item.image} alt="team" className="team-image" />
                   <div className="name">
                     <strong>
                       <p>{item.name}</p>
