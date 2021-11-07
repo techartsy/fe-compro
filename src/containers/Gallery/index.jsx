@@ -181,7 +181,7 @@ export const Gallery = () => {
       id: 4,
       title: "Louis Armstrong",
       image: null,
-      video: 'https://www.youtube.com/embed/WI73H9jT-Kc',
+      video: 'https://www.youtube.com/embed/VqhCQZaH4Vs',
       caption: "Louis Armstrong - What A Wonderful World",
       category: "video"
     },
@@ -271,7 +271,8 @@ export const Gallery = () => {
                     // width="560"
                     // height="315"
                     src={item.video}
-                    rel="noreferrer"
+                    // rel="noreferrer"
+                    referrerpolicy="no-referrer-when-downgrade"
                     // referrerpolicy="no-referrer"
                     className="youtube"
                     title="YouTube video player"
