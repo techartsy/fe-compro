@@ -84,7 +84,7 @@
 .secondimage {
   width: 100%;
   @include apply-at-sm-md-size {
-    min-height: 230px;
+    min-height: 210px;
   }
 }
 .portfolio-detail-result {
