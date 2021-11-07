@@ -22,12 +22,10 @@
   width: 80%;
   // height: 100%;
   @include apply-at-sm-md-size {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: fit-content !important;
-    // overflow: hidden;
-    // min-height: 400px;
+    // padding-bottom: 56.25%;
+    // position: relative;
+    padding-bottom: 0;
+    height: 100px;
   }
 }
 .video-container {
@@ -36,11 +34,11 @@
 .offerItemWrapper object,
 .offerItemWrapper embed {
   @include apply-at-sm-md-size {
-    position: absolute;
+    // position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
 }
 .video {
@@ -53,11 +51,7 @@
   width: 680px;
   height: 380px;
   @include apply-at-sm-md-size {
-    // height: 300px;
-    // width: 100%;
-    // height: 100%;
-    // width: 100%;
-    // min-height: 300px;
+    height: 220px;
   }
 }
 .active-video {
@@ -67,14 +61,13 @@
   transform: scale(1);
   transition: transform 1500ms;
   opacity: 1;
+  @include apply-at-sm-md-size {
+    max-height: 290px;
+  }
 }
 .slider {
   overflow-x: hidden;
   overflow-y: hidden;
-  @include apply-at-sm-md-size {
-    padding-bottom: 12%;
-  }
-  // position: relative;
 }
 .fade {
   -webkit-animation-name: fade;
@@ -336,11 +329,13 @@
   margin-bottom: 5%;
   font-size: 16px;
   @include apply-at-sm-md-size {
-    position: absolute;
+    margin-bottom: 0;
+    font-size: 10px;
+    // position: absolute;
     // position: relative;
     // margin-bottom: 20px;
 
-    margin-top: 60%;
+    // margin-top: 60%;
     // top: 250px;
     // z-index: 999;
 
@@ -540,7 +535,7 @@
   @include apply-at-sm-size {
     font-size: 2.5rem;
     top: 3rem;
-    margin-top: 30px;
+    // margin-top: 10px;
   }
 }
 .slick-dots li.slick-active button:before {
