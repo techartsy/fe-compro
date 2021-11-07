@@ -271,8 +271,8 @@ export const Gallery = () => {
                     // width="560"
                     // height="315"
                     src={item.video}
-                    // rel="noreferrer"
-                    referrerpolicy="no-referrer"
+                    rel="noreferrer"
+                    // referrerpolicy="no-referrer"
                     className="youtube"
                     title="YouTube video player"
                     frameborder="0"
