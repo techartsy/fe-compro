@@ -48,7 +48,7 @@ export const Footer = () => {
               </strong>
             </div>
             <div className="media-link">
-              <a href="https://api.whatsapp.com/send?phone=6285155305018&" target="_blank">
+              <a href="https://www.instagram.com/rinotoharto/" target="_blank">
                 <img src={instagram} alt="instagram" className="media-icon" />
               </a>
               <a href="https://www.linkedin.com/in/rinoto-harto/" target="_blank">
@@ -57,7 +57,7 @@ export const Footer = () => {
               <a href="https://www.instagram.com/rinotoharto/" target="_blank">
                 <img src={Behance} alt="instagram" className="media-icon" />
               </a>
-              <a href="https://www.instagram.com/rinotoharto/" target="_blank">
+              <a href="https://www.youtube.com/c/Chanelaleale" target="_blank">
                 <img src={Youtube} alt="instagram" className="media-icon" />
               </a>
             </div>
