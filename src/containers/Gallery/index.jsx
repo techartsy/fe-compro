@@ -154,27 +154,27 @@ export const Gallery = () => {
   
   const videos = [
     {
-      id: 1,
-      title: "Aha",
+      id: 4,
+      title: "Louis Armstrong",
       image: null,
-      video: 'https://www.youtube.com/embed/Ktb44YLL8Nw',
-      caption: "Aha - Take On Me",
+      video: 'https://www.youtube.com/embed/VqhCQZaH4Vs',
+      caption: "Louis Armstrong - What A Wonderful World",
+      category: "video"
+    },
+    {
+      id: 1,
+      title: "Penyergapan teroris oleh paskhas",
+      image: null,
+      video: 'https://www.youtube.com/embed/iIbTeur7tcY',
+      caption: "Penyergapan teroris oleh paskhas",
       category: "video"
     },
     {
       id: 2,
       title: "The Chantels",
       image: null,
-      video: 'https://www.youtube.com/embed/IePTH1PWzAs',
+      video: 'https://www.youtube.com/embed/ZZylQj5zwTw',
       caption: "The Chantels - Maybe",
-      category: "video"
-    },
-    {
-      id: 4,
-      title: "Louis Armstrong",
-      image: null,
-      video: 'https://www.youtube.com/embed/VqhCQZaH4Vs',
-      caption: "Louis Armstrong - What A Wonderful World",
       category: "video"
     },
   ];
