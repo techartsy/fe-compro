@@ -53,17 +53,18 @@
 .media-section {
   margin-top: 14px;
   @include apply-at-sm-size {
-    text-align: center;
-    width: 90%;
     @include directionY;
+    text-align: center;
+    width: 95%;
     align-items: center;
   }
 }
 .media-section-header {
   font-weight: bold;
   @include apply-at-sm-md-size {
+    @include content-center;
     font-size: 11px;
-    width: 50%;
+    width: 45%;
   }
 }
 .media-link {
