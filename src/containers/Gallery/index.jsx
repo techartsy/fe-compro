@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 import "./index.scss";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer/index";
@@ -41,8 +42,9 @@ function SamplePrevArrow(props) {
 
 export const Gallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { width } = useWindowDimensions();
   const settings = {
-    arrows: true,
+    arrows: width === 'lg' ? true : false,
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
@@ -241,7 +243,7 @@ export const Gallery = () => {
             <div className="gallery-image-caption">{selectedImage?.caption}</div>
           </div>
         </div>
-        <div className="image-thumbnail">
+        {width === 'lg' && <div className="image-thumbnail">
           {images.map((item) => {
             return (
               <img
@@ -254,7 +256,7 @@ export const Gallery = () => {
               />
             );
           })}
-        </div>
+        </div>}
       </div>
       <div className="gallery-video-container">
         <p className="gallery-category">Videografi</p>
@@ -264,9 +266,12 @@ export const Gallery = () => {
               return (
                 <div className={`offerItemWrapper ${idx === activeIndex ? 'active-video' : 'video'}`}>
                   <iframe
-                    width="680"
-                    height="380"
+                    // width={width === 'lg' ? "680" : '340'}
+                    // height={width === 'lg' ? "380" : '200'}
+                    // width="560"
+                    // height="315"
                     src={item.video}
+                    className="youtube"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -70,6 +70,7 @@ const HomePage = () => {
           <ScrollAnimation
             duration={3}
             animateIn="fadeInLeft"
+            animateOut="fadeOutRight"
             initiallyVisible={true}
           >
             <p>Sudah Saatnya Bersahabat Dengan Digital</p>

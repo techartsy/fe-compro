@@ -9,6 +9,7 @@ const Sidebar = () => {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     <div className='sidebarContainer'>
       <Menu right >
+        <Link className='sidebar-link' to='/'>Home</Link>
         <Link className='sidebar-link' to='/about'>Tentang</Link>
         <Link className='sidebar-link' to='/service'>Layanan</Link>
         <Link className='sidebar-link' to='/gallery'>Galeri</Link>

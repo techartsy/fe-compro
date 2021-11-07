@@ -1,4 +1,5 @@
 import React from "react";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 import Navbar from "../../components/Navbar";
 import Development from "../../static/animation/development.json";
 import laptop from "../../static/icon/laptop.png";
@@ -12,12 +13,15 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import Whatsapp from "../../components/WhatsApp/index";
 import Footer from "../../components/Footer/index";
 import separator from "../../static/images/separator.png";
+import separator_sm from "../../static/images/separator_sm.png";
 import bottom_separator from "../../static/images/bottom_separator.png";
+import bottom_separator_sm from "../../static/images/bottom_separator_sm.png";
 import photo_ilustration from "../../static/images/photo_ilustration.png";
 import video_ilustration from "../../static/images/video_ilustration.png";
 import "./style.scss";
 
 export const Service = () => {
+  const { width } = useWindowDimensions();
   return (
     <div className="serviceContainer">
       <div className="serviceHeader">
@@ -26,6 +30,7 @@ export const Service = () => {
           <p>Kami Akan Menciptakan Produk Digital Yang Mempunyai Nilai Seni</p>
         </div>
       </div>
+      <div className="background-service">
       <div className="service-top-section">
         <div className="service-title">
           <strong>
@@ -128,7 +133,7 @@ export const Service = () => {
         </div>
       </div>
       <div className="content-separator">
-        <img src={separator} alt="wave" className="image-separator" />
+        <img src={width === 'lg' ? separator : separator_sm} alt="wave" className="image-separator" />
       </div>
       <div className="service-bottom-section">
         <div className="service-title">
@@ -179,9 +184,10 @@ export const Service = () => {
             <img src={video_ilustration} alt="videography" className="service-ilustration" />
           </div>
         </div>
-        <div className="bottom-separator">
-          <img src={bottom_separator} alt="wave" />
-        </div>
+        {/* <div className="bottom-separator">
+          <img src={width === 'lg' ? bottom_separator : bottom_separator_sm} alt="wave" />
+        </div> */}
+      </div>
       </div>
       <Whatsapp />
       <Footer />

@@ -96,6 +96,7 @@
   @include apply-at-sm-md-size {
     font-size: 12px;
     width: 90%;
+    margin-bottom: 120px;
   }
   @include apply-at-lg-size {
     @include paddedWrapper;

@@ -10,6 +10,7 @@
   background-color: transparent;
   transition: background-color 1.5s ease;
 }
+
 .navbar-active {
   background-color: #011b3e;
   transition: background-color 1s ease;
@@ -38,6 +39,10 @@
 .menuWrapper {
   width: 40%;
   align-items: center;
+  padding-right: 1rem;
+  @include apply-at-md-size {
+    border: 1px solid red;
+  }
 }
 
 .menuWrapper ul {
