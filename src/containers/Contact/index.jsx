@@ -30,6 +30,13 @@ export const ContactUs = () => {
   const changeMessage = (e) => {
     setMessage(e.target.value);
   };
+  const resetForm = () => {
+    setName('');
+    setEmail('');
+    setNumber('');
+    setSubject('');
+    setMessage('');
+  }
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(
@@ -39,6 +46,7 @@ export const ContactUs = () => {
         email,
         subject,
         message,
+        resetForm,
       })
     );
   };

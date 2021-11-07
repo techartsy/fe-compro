@@ -47,7 +47,7 @@ export const Footer = () => {
               </strong>
             </div>
             <div className="media-link">
-              <a rel="noreferrer" href="https://www.instagram.com/rinotoharto/" target="_blank">
+              <a rel="noreferrer" href="https://www.behance.net/techartindones" target="_blank">
                 <img src={instagram} alt="instagram" className="media-icon" />
               </a>
               <a rel="noreferrer" href="https://www.linkedin.com/in/rinoto-harto/" target="_blank">

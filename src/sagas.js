@@ -13,8 +13,17 @@ function* helloWorld(action) {
 }
 
 function* submitContact({ value }) {
+  const { name, email, message, subject, phone, resetForm } = value;
   try {
-    const response = yield call(postContact, value);
+    const formValue = {
+      name,
+      email,
+      message,
+      subject,
+      phone,
+    };
+    const response = yield call(postContact, formValue);
+    resetForm();
   } catch (error) {
     console.log(error);
   }
