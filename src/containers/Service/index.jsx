@@ -14,8 +14,6 @@ import Whatsapp from "../../components/WhatsApp/index";
 import Footer from "../../components/Footer/index";
 import separator from "../../static/images/separator.png";
 import separator_sm from "../../static/images/separator_sm.png";
-import bottom_separator from "../../static/images/bottom_separator.png";
-import bottom_separator_sm from "../../static/images/bottom_separator_sm.png";
 import photo_ilustration from "../../static/images/photo_ilustration.png";
 import video_ilustration from "../../static/images/video_ilustration.png";
 import "./style.scss";
@@ -184,9 +182,6 @@ export const Service = () => {
             <img src={video_ilustration} alt="videography" className="service-ilustration" />
           </div>
         </div>
-        {/* <div className="bottom-separator">
-          <img src={width === 'lg' ? bottom_separator : bottom_separator_sm} alt="wave" />
-        </div> */}
       </div>
       </div>
       <Whatsapp />
