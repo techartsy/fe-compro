@@ -258,14 +258,8 @@ export const Gallery = () => {
               return (
                 <div className={`offerItemWrapper ${idx === activeIndex ? 'active-video' : 'video'}`}>
                   <iframe
-                    // width={width === 'lg' ? "680" : '340'}
-                    // height={width === 'lg' ? "380" : '200'}
-                    // width="560"
-                    // height="315"
                     src={item.video}
-                    // rel="noreferrer"
                     referrerpolicy="no-referrer-when-downgrade"
-                    // referrerpolicy="no-referrer"
                     className="youtube"
                     title="YouTube video player"
                     frameborder="0"

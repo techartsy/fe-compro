@@ -224,7 +224,6 @@
   justify-content: flex-start;
   margin-left: 2%;
   font-size: 32px;
-  // color: $color-dark-purple;
   color: $color-black;
   width: 38%;
   text-align: center;
@@ -279,8 +278,6 @@
   @include apply-at-sm-md-size {
     font-size: 14px;
   }
-}
-.service-img {
 }
 .text {
   color: $color-white;
@@ -482,7 +479,6 @@
     margin-top: -10px;
   }
   @include apply-at-md-size {
-    // border: 1px solid green;
     font-size: 14px;
     width: 30%;
     margin-left: 57%;

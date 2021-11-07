@@ -1,5 +1,4 @@
 import React from "react";
-import _ from 'lodash';
 import "./style.scss";
 import { useHistory } from "react-router-dom";
 import { removeDash } from "../../utils/formatHelper";

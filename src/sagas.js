@@ -1,15 +1,10 @@
-import { call, put, takeEvery, takeLatest } from "redux-saga/effects";
-import {
-  HELLO_WORLD,
-  RECEIVE_HELLO_WORLD,
-  POST_CONTACT,
-} from "./store/constants/index";
+import { call, put, takeLatest } from "redux-saga/effects";
+import { HELLO_WORLD, POST_CONTACT } from "./store/constants/index";
 import { receiveHelloWorld } from "./store/actions/index";
 import { getAllGallery, postContact } from "./domain/API";
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
 function* helloWorld(action) {
   try {
-    // const user = yield call(Api.fetchUser, action.payload.userId);
     const fetchData = yield call(getAllGallery);
     yield put(receiveHelloWorld("hello world saga"));
   } catch (e) {

@@ -67,12 +67,6 @@
 .service-top-section {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(215, 243, 245, 1) 0%,
-  //   rgba(231, 245, 255, 0.7371323529411764) 100%,
-  //   rgba(0, 212, 255, 1) 100%
-  // );
 }
 .dev-service-container {
   @include directionX;
@@ -129,16 +123,8 @@
   }
 }
 .content-separator {
-  // margin-top: 30px;
-  // z-index: 2;
   position: relative;
   margin-bottom: -55px;
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(215, 243, 245, 1) 0%,
-  //   rgba(231, 245, 255, 0.7371323529411764) 100%,
-  //   rgba(0, 212, 255, 1) 100%
-  // );
   @include apply-at-sm-md-size {
     width: 360px;
   }
@@ -181,12 +167,6 @@
   }
 }
 .service-bottom-section {
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(215, 243, 245, 1) 0%,
-  //   rgba(231, 245, 255, 0.7371323529411764) 100%,
-  //   rgba(0, 212, 255, 1) 100%
-  // );
   @include apply-at-sm-md-size {
     margin-top: -200px;
     position: relative;

@@ -17,7 +17,6 @@ export const Footer = () => {
         <div className="wave-item wave1" />
         <div className="wave-item wave2" />
         <div className="wave-item wave3" />
-        {/* <div className="wave-item wave4" /> */}
       </div>
       <div className="footer-title">
         <strong>
@@ -48,16 +47,16 @@ export const Footer = () => {
               </strong>
             </div>
             <div className="media-link">
-              <a href="https://www.instagram.com/rinotoharto/" target="_blank">
+              <a rel="noreferrer" href="https://www.instagram.com/rinotoharto/" target="_blank">
                 <img src={instagram} alt="instagram" className="media-icon" />
               </a>
-              <a href="https://www.linkedin.com/in/rinoto-harto/" target="_blank">
+              <a rel="noreferrer" href="https://www.linkedin.com/in/rinoto-harto/" target="_blank">
                 <img src={LinkedIn} alt="instagram" className="media-icon" />
               </a>
-              <a href="https://www.behance.net/techartindones" target="_blank">
+              <a rel="noreferrer" href="https://www.behance.net/techartindones" target="_blank">
                 <img src={Behance} alt="instagram" className="media-icon" />
               </a>
-              <a href="https://www.youtube.com/c/Chanelaleale" target="_blank">
+              <a rel="noreferrer" href="https://www.youtube.com/c/Chanelaleale" target="_blank">
                 <img src={Youtube} alt="instagram" className="media-icon" />
               </a>
             </div>

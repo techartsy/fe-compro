@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 import "./index.scss";
@@ -11,22 +11,14 @@ import ilustration from "../../static/images/ilustration.png";
 import invitation from "../../static/icon/invitation.png";
 import movie from "../../static/icon/movie.png";
 import { useHistory } from "react-router-dom";
-import useWindowDimensions from "../../utils/useWindowDimensions";
 import Footer from "../../components/Footer/index";
 import Whatsapp from "../../components/WhatsApp/index";
 import Animation4 from "../../static/animation/4.json";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import chevronRight from "../../static/images/chevron-right.png";
-import { useDispatch } from "react-redux";
-import { requestHelloWorld } from "../../store/actions/index";
 
 const HomePage = () => {
-  const { height, width } = useWindowDimensions();
   const history = useHistory();
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(requestHelloWorld());
-  }, []);
   const services = [
     {
       image: laptop,

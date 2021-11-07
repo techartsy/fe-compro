@@ -44,7 +44,6 @@
   border: none;
   object-fit: cover;
   object-position: top;
-  // background-repeat: no-repeat;
   background-size: cover;
   @include apply-at-sm-md-size {
     @include directionY;

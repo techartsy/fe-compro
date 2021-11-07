@@ -71,7 +71,7 @@ $screen-1270-limit: 1270px;
 }
 
 @mixin apply-at-md-size {
-  @media (min-width: $screen-sm-limit+1) and (max-width: $screen-md-limit) {
+  @media (min-width: $screen-sm-limit + 1) and (max-width: $screen-md-limit) {
     @content;
   }
 }
@@ -277,9 +277,4 @@ $screen-1270-limit: 1270px;
   @include apply-at-lg-size {
     min-height: 575px;
   }
-}
-
-@mixin content-center {
-  margin-left: auto;
-  margin-right: auto;
 }
