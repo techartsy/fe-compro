@@ -151,7 +151,7 @@ export const Gallery = () => {
   ];
 
   const [selectedImage, setSelectedImage] = useState(images[0]);
-
+  
   const videos = [
     {
       id: 1,
@@ -271,6 +271,8 @@ export const Gallery = () => {
                     // width="560"
                     // height="315"
                     src={item.video}
+                    // rel="noreferrer"
+                    referrerpolicy="no-referrer"
                     className="youtube"
                     title="YouTube video player"
                     frameborder="0"
