@@ -155,26 +155,18 @@ export const Gallery = () => {
   const videos = [
     {
       id: 1,
-      title: "Ikrar",
+      title: "Aha",
       image: null,
-      video: 'https://www.youtube.com/embed/WI73H9jT-Kc',
-      caption: "Diesnatalis 40 th GIRIGAHANA",
+      video: 'https://www.youtube.com/embed/Ktb44YLL8Nw',
+      caption: "Aha - Take On Me",
       category: "video"
     },
     {
       id: 2,
-      title: "Saybia",
+      title: "The Chantels",
       image: null,
-      video: 'https://www.youtube.com/embed/i9oyEHUqAhg',
-      caption: "Saybia - The Second You Sleep",
-      category: "video"
-    },
-    {
-      id: 3,
-      title: "Bad English",
-      image: null,
-      video: 'https://www.youtube.com/embed/cu6pclWsxzs',
-      caption: "Bad English - When I See You Smile",
+      video: 'https://www.youtube.com/embed/IePTH1PWzAs',
+      caption: "The Chantels - Maybe",
       category: "video"
     },
     {
