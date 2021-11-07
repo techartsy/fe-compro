@@ -113,7 +113,7 @@ export const ContactUs = () => {
                 required
                 className="textArea"
                 rows="10"
-                cols={width === 'sm' || width === 'md' ? "40" : "86"}
+                cols={width === 'sm' || width === 'md' ? "38" : "86"}
                 value={message}
                 onChange={(e) => changeMessage(e)}
               />
