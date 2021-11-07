@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from 'sweetalert2'
 import useWindowDimensions from "../../utils/useWindowDimensions";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer/index";
@@ -30,12 +31,41 @@ export const ContactUs = () => {
   const changeMessage = (e) => {
     setMessage(e.target.value);
   };
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
   const resetForm = () => {
     setName('');
     setEmail('');
     setNumber('');
     setSubject('');
     setMessage('');
+  }
+  const showSuccessNotif = () => {
+    Toast.fire({
+      icon: 'success',
+      title: 'Message successfully sent'
+    })
+  }
+
+  const showErrorNotif = () => {
+    Toast.fire({
+      icon: 'error',
+      title: 'Ooopss something went wrong, please try again.',
+      customClass: {
+        container: 'swal-overlay'
+      }
+    })
   }
   const onSubmit = (e) => {
     e.preventDefault();
@@ -47,6 +77,8 @@ export const ContactUs = () => {
         subject,
         message,
         resetForm,
+        showSuccessNotif,
+        showErrorNotif,
       })
     );
   };
