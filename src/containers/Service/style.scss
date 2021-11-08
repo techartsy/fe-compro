@@ -6,6 +6,7 @@
 }
 
 .serviceHeader {
+  @include parallax;
   background-image: url("../../static/images/service.png");
   height: 100%;
   width: 100%;

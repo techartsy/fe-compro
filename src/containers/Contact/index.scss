@@ -5,6 +5,7 @@
   overflow-x: hidden;
 }
 .contact-header {
+  @include parallax;
   background-image: url("../../static/images/contact.png");
   width: 100%;
   margin-top: -20px;

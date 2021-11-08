@@ -75,6 +75,7 @@
   height: 100vh;
 }
 .gallery-header {
+  @include parallax;
   background-image: url("../../static/images/gallery.png");
   margin-top: -40px;
   height: 100%;

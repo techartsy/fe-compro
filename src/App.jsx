@@ -6,6 +6,7 @@ import {
   GalleryPage,
   PortfolioPage,
   PortfolioItem,
+  NotFoundPage,
 } from "./containers";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,15 +18,14 @@ function App() {
     <Provider store={store}>
       <Router>
         <Switch>
-          <div className="App">
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/about" component={AboutPage} />
-            <Route exact path="/service" component={ServicePage} />
-            <Route exact path="/contact" component={ContactPage} />
-            <Route exact path="/gallery" component={GalleryPage} />
-            <Route exact path="/portfolio" component={PortfolioPage} />
-            <Route exact path="/portfolio/:id" component={PortfolioItem} />
-          </div>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/service" component={ServicePage} />
+          <Route exact path="/contact" component={ContactPage} />
+          <Route exact path="/gallery" component={GalleryPage} />
+          <Route exact path="/portfolio" component={PortfolioPage} />
+          <Route exact path="/portfolio/:id" component={PortfolioItem} />
+          <Route path='*' component={NotFoundPage} />
         </Switch>
       </Router>
     </Provider>

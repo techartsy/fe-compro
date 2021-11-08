@@ -6,6 +6,7 @@
   width: 100%;
 }
 .portfolio-header {
+  @include parallax;
   background-image: url("../../static/images/portfolio.png");
   height: 100%;
   width: 100%;

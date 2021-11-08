@@ -29,6 +29,7 @@
   @include body;
 }
 .header {
+  @include parallax;
   background-image: url("../../static/images/home.png");
   height: 100%;
   width: 100%;

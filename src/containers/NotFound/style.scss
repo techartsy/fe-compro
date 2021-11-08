@@ -1,9 +1,20 @@
 @import "../../styles/base";
 
 .not-found-container {
+  background-image: url("../../static/images/notfound_bg.png");
+  width: 100%;
+  padding-bottom: 1.2rem;
+  margin-top: -20px;
+  border: none;
+  object-fit: cover;
+  object-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .not-found-header {
-  background-image: url("../../static/images/not_found.png");
+  background-image: url("../../static/images/notfound.png");
+  @include directionX;
+  justify-content: center;
   width: 100%;
   margin-top: -20px;
   border: none;
@@ -11,7 +22,20 @@
   object-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 700px;
 }
-.not-found-img {
+.notfound-img-wrapper {
+  @include apply-at-lg-size {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+  height: 100vh;
+}
+.notfound-img {
+  margin: 15% 0 15% 27%;
+  width: 600px;
+  @include apply-at-sm-md-size {
+    width: 300px;
+    margin-left: 10%;
+    margin-top: 70%;
+  }
 }
