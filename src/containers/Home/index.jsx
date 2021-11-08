@@ -156,7 +156,7 @@ const HomePage = () => {
               );
             })}
         </div>
-        <ScrollAnimation duration={1.5} animateIn="fadeIn">
+        <ScrollAnimation duration={1} animateIn="fadeIn">
           <div className="actionBtn" onClick={goToService}>
             <p>Lanjutkan</p>
           </div>
@@ -173,6 +173,12 @@ const HomePage = () => {
         <div className="scaleup-img">
           <img src={ilustration} alt="scale-up" />
         </div>
+        <ScrollAnimation
+            duration={2}
+            animateIn="fadeInLeft"
+            animateOut="fadeOutLeft"
+            initiallyVisible={true}
+          >
         <div className="contact-us">
           <div className="right-section">
             <div className="link-header">
@@ -192,6 +198,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        </ScrollAnimation>
       </div>
       <Whatsapp />
       <Footer />
