@@ -75,28 +75,32 @@ const HomePage = () => {
         </strong>
       </div>
       <div className="infoSection">
-        <div className="shadow">
-          <div className="infoText">
-            <p>
-              Techartsy Indonesia merupakan partner yang tepat untuk
-              mengembangkan bisnis anda, karena kami memiliki tim ahli dalam
-              bidang pembuatan website, videografi & fotografi.
-            </p>
+        <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+          <div className="shadow">
+            <div className="infoText">
+              <p>
+                Techartsy Indonesia merupakan partner yang tepat untuk
+                mengembangkan bisnis anda, karena kami memiliki tim ahli dalam
+                bidang pembuatan website, videografi & fotografi.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="animation">
-          <Player
-            autoplay
-            loop
-            src={Animation4}
-            className="animation-section"
-          >
-            <Controls
-              visible={false}
-              buttons={["play", "repeat", "frame", "debug"]}
-            />
-          </Player>
-        </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight" duration={2}>
+          <div className="animation">
+            <Player
+              autoplay
+              loop
+              src={Animation4}
+              className="animation-section"
+            >
+              <Controls
+                visible={false}
+                buttons={["play", "repeat", "frame", "debug"]}
+              />
+            </Player>
+          </div>
+        </ScrollAnimation>
       </div>
       <div className="subHeader-service">
         <strong>
