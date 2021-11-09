@@ -66,7 +66,7 @@ const HomePage = () => {
             initiallyVisible={true}
           >
             <p>Sudah Saatnya Bersahabat Dengan Digital</p>
-            <p>Tes Build</p>
+            <p>Tes Build 2</p>
           </ScrollAnimation>
         </div>
       </div>
