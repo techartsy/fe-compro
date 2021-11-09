@@ -188,7 +188,14 @@ export const ContactUs = () => {
                 <p className="item">Depok || 16515</p>
               </div>
               <div className="our-address-contact">
-                <p className="item">techarty.indonesia@gmail.com</p>
+                <a
+                  className="item"
+                  href="mailto:hello.techartsy.indonesia@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  hello.techartsy.indonesia@gmail.com
+                </a>
               </div>
             </div>
           </div>
