@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import image from "../../static/images/5.png";
 import rando from "../../static/images/rando.png";
 import darmawan from "../../static/images/darmawan.png";
-import rino from "../../static/images/rino.png";
+// import rino from "../../static/images/rino.png";
 import braja from "../../static/images/braja.png";
 import daniel from "../../static/images/daniel.png";
 import agung from "../../static/images/agung.png";
@@ -29,11 +29,11 @@ const AboutUs = () => {
       name: "Daniel Erwinsyah",
       position: "Co Founder",
     },
-    {
-      image: rino,
-      name: "Rinoto Harto",
-      position: "Co Founder",
-    },
+    // {
+    //   image: rino,
+    //   name: "Rinoto Harto",
+    //   position: "Co Founder",
+    // },
     {
       image: braja,
       name: "Braja Sifa Satyaputra",

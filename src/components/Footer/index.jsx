@@ -33,11 +33,13 @@ export const Footer = () => {
           </div>
           <div>
             <strong>
-              <p className="address-item">Jl. Papandayan J177</p>
-              <p className="address-item">Megaplitan Cinere</p>
-              <p className="address-item">Limo - Depok</p>
+              {/* <p className="address-item">Jl. Papandayan J177</p> */}
+              {/* <p className="address-item">Megaplitan Cinere</p> */}
+              {/* <p className="address-item">Limo - Depok</p> */}
+              <p className="address-item">Jl. Andara 1</p>
+              <p className="address-item">Cinere - Depok</p>
               <p className="address-item">Jawa Barat</p>
-              <p className="address-item">16515</p>
+              <p className="address-item">16513</p>
             </strong>
           </div>
           <div className="media-section">
@@ -50,7 +52,8 @@ export const Footer = () => {
               <a rel="noreferrer" href="https://www.behance.net/techartindones" target="_blank">
                 <img src={instagram} alt="instagram" className="media-icon" />
               </a>
-              <a rel="noreferrer" href="https://www.linkedin.com/in/rinoto-harto/" target="_blank">
+              {/* <a rel="noreferrer" href="https://www.linkedin.com/in/rinoto-harto/" target="_blank"> */}
+              <a rel="noreferrer" href="https://www.linkedin.com/in/brajasifasatyaputra/" target="_blank">
                 <img src={LinkedIn} alt="instagram" className="media-icon" />
               </a>
               <a rel="noreferrer" href="https://www.behance.net/techartindones" target="_blank">
