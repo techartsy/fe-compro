@@ -1,184 +1,104 @@
 import React, { useState } from "react";
+import { VideoSection } from '../../components/VideoSection'
 import useWindowDimensions from "../../utils/useWindowDimensions";
 import "./index.scss";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer/index";
-import Slider from "react-slick";
 import Whatsapp from "../../components/WhatsApp/index";
-import Prev from "../../static/icon/prev_black.png";
-import Next from "../../static/icon/next_black.png";
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-      }}
-      onClick={onClick}
-    >
-      <img src={Next} alt="Next Button" />
-    </div>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-      }}
-      onClick={onClick}
-    >
-      <img src={Prev} alt="Previous Button"/>
-    </div>
-  );
-}
 
 export const Gallery = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
   const { width } = useWindowDimensions();
-  const settings = {
-    arrows: width === 'lg' ? true : false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    swipeToSlide: true,
-    infinite: true,
-    dots: true,
-    // centerMode: true,
-    dotsClass: "slick-dots",
-    speed: 1500,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    beforeChange: (current, next) => setActiveIndex(next)
-  };
-
   const images = [
     {
       id: 1,
-      title: "Autumn Season",
-      image:
-        "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__480.jpg",
-      video: "",
-      caption: "Autumn Season Caption",
+      title: "Blur",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649177512/Gallery%20Compro/blur_ivgwqr.jpg',
+      caption: "Metropole Lights, Capital City of Indonesia",
       category: "image",
     },
     {
       id: 2,
-      title: "Tree",
-      image:
-        "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg",
+      title: "Flora",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649177529/Gallery%20Compro/ciplukan_lhufl3.jpg',
       video: "",
-      caption: "Tree Caption",
+      caption: "Fresh Fruit of Ciplukan",
       category: "image",
     },
     {
       id: 3,
-      title: "Beauty of Nature",
-      image:
-        "https://sites.google.com/site/beautyofnature98/_/rsrc/1482911355882/config/customLogo.gif?revision=1",
+      title: "Leaves",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649177496/Gallery%20Compro/leave_ay7ucg.jpg',
       video: "",
-      caption: "Beauty of Nature Caption",
+      caption: "Backyard Sunshine Leaves",
       category: "image",
     },
     {
       id: 4,
-      title: "Flower",
-      image:
-        "https://p4.wallpaperbetter.com/wallpaper/923/239/752/flowers-lake-building-home-wallpaper-preview.jpg",
+      title: "Road",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649177481/Gallery%20Compro/road_hmy87o.jpg',
       video: "",
-      caption: "Flower Caption",
+      caption: "Little Africa, East Java, Indonesia",
       category: "image",
     },
     {
       id: 5,
-      title: "Sunset Deer",
-      image: "https://wallpaperaccess.com/full/2518973.jpg",
+      title: "Fauna",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649177513/Gallery%20Compro/bird_yfbvre.jpg',
       video: "",
-      caption: "Deer Caption",
+      caption: "Lovebird Spirit, Perched in a Cage",
       category: "image",
     },
     {
       id: 6,
-      title: "Milky Way",
-      image:
-        "https://cdn.pixabay.com/photo/2015/10/12/14/59/milky-way-984050_1280.jpg",
+      title: "Model",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649177570/Gallery%20Compro/model_nfq4vy.jpg',
       video: "",
-      caption: "Milky Way Caption",
+      caption: "Dam Rocks, Putra Agung Wibisono",
       category: "image",
     },
     {
       id: 7,
-      title: "Forest",
-      image:
-        "https://images.theconversation.com/files/305837/original/file-20191209-90562-nsnsun.jpg?ixlib=rb-1.1.0&rect=284%2C696%2C1934%2C965&q=45&auto=format&w=668&h=324&fit=crop",
+      title: "Beach",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649177592/Gallery%20Compro/coconut_cxgyai.jpg',
       video: "",
-      caption: "Forest Caption",
+      caption: "Coconut Sunset, The Legend of South",
       category: "image",
     },
     {
       id: 8,
-      title: "Mist",
-      image:
-        "https://cdn.shopify.com/s/files/1/0337/7469/products/Mystic-Forest-Landscape-Wall-Mural_0852a2f7-50a8-4f80-8226-9fc399d7b023.jpg?v=1628797728",
+      title: 'Human Interest',
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649177451/Gallery%20Compro/DSC_3620_2_nxfvfa.jpg',
       video: "",
-      caption: "Misty Forest Caption",
+      caption: "They Called 'Bolang', Situ Gintung",
       category: "image",
     },
     {
       id: 9,
-      title: "Beach",
-      image:
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFsaSUyMGJlYWNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+      title: "Street Photography",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649180031/Gallery%20Compro/reels-10_fn2dbs.jpg',
       video: "",
-      caption: "Sunset on Beach Caption",
+      caption: "Sudirman Protocol Road at Night",
       category: "image",
     },
     {
       id: 10,
-      title: "Flowers",
-      image:
-        "https://i.natgeofe.com/n/57f411cd-dfe6-41a6-8d40-21ba583eccfb/lake-elsinore-california.jpg",
+      title: "Nature",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649183002/Gallery%20Compro/misk_maoglg.jpg',
       video: "",
-      caption: "Flowers Caption",
+      caption: "Morning Mist in Ijen Valley, East Java",
+      category: "image",
+    },
+    {
+      id: 11,
+      title: "Human Interest",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649183061/Gallery%20Compro/peoples_mornig_igszqy.jpg',
+      video: "",
+      caption: "Karanghawu Morning People, Sukabumi, West Java",
       category: "image",
     },
   ];
 
   const [selectedImage, setSelectedImage] = useState(images[0]);
-  
-  const videos = [
-    {
-      id: 4,
-      title: "Louis Armstrong",
-      image: null,
-      video: 'https://www.youtube.com/embed/VqhCQZaH4Vs',
-      caption: "Louis Armstrong - What A Wonderful World",
-      category: "video"
-    },
-    {
-      id: 1,
-      title: "Penyergapan teroris oleh paskhas",
-      image: null,
-      video: 'https://www.youtube.com/embed/iIbTeur7tcY',
-      caption: "Penyergapan teroris oleh paskhas",
-      category: "video"
-    },
-    {
-      id: 2,
-      title: "The Chantels",
-      image: null,
-      video: 'https://www.youtube.com/embed/ZZylQj5zwTw',
-      caption: "The Chantels - Maybe",
-      category: "video"
-    },
-  ];
-
   const setDisplayedImage = (image) => {
     setSelectedImage(image);
   };
@@ -251,29 +171,7 @@ export const Gallery = () => {
         </div>}
       </div>
       <div className="gallery-video-container">
-        <p className="gallery-category">Videografi</p>
-        <div className="gallery-video-wrapper">
-          <Slider className="slider" {...settings}>
-            {videos.map((item, idx) => {
-              return (
-                <div className={`offerItemWrapper ${idx === activeIndex ? 'active-video' : 'video'}`}>
-                  <iframe
-                    src={item.video}
-                    referrerpolicy="no-referrer-when-downgrade"
-                    className="youtube"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="allowfullscreen"
-                  ></iframe>
-                  <div>
-                    <p className="gallery-caption">{item.caption}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </Slider>
-        </div>
+        <VideoSection />
       </div>
       <Whatsapp />
       <div className="gallery-footer">
