@@ -75,7 +75,7 @@ export const Gallery = () => {
     {
       id: 9,
       title: "Street Photography",
-      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649180031/Gallery%20Compro/reels-10_fn2dbs.jpg',
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1649421575/Gallery%20Compro/reels-10_1_x4kshh.jpg',
       video: "",
       caption: "Sudirman Protocol Road at Night",
       category: "image",
@@ -171,7 +171,7 @@ export const Gallery = () => {
         </div>}
       </div>
       <div className="gallery-video-container">
-        <VideoSection />
+        {/* <VideoSection /> */}
       </div>
       <Whatsapp />
       <div className="gallery-footer">

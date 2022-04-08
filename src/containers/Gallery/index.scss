@@ -104,6 +104,7 @@
   }
 }
 .gallery-photo-slide {
+  margin-bottom: 15%;
   z-index: 2;
   background-color: white;
   position: relative;
@@ -116,6 +117,7 @@
   border: 1px solid black;
   @include apply-at-sm-md-size {
     width: 85%;
+    margin-bottom: 35%;
   }
 }
 .image-title-section {
@@ -212,6 +214,7 @@
   backface-visibility: hidden;
   height: 441px;
   @include apply-at-sm-md-size {
+    width: 100%;
     height: auto;
   }
 }
