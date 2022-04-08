@@ -9,8 +9,7 @@ const Whatsapp = () => {
       <a
         rel="noreferrer"
         href="https://api.whatsapp.com/send?phone=6285155305018"
-        target="_blank"
-      >
+        target="_blank">
         <FontAwesomeIcon icon={faWhatsapp} className="icon" />
       </a>
     </div>
