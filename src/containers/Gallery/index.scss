@@ -17,8 +17,6 @@
     opacity: 1;
   }
 }
-.video-container {
-}
 .offerItemWrapper iframe,
 .offerItemWrapper object,
 .offerItemWrapper embed {
@@ -114,8 +112,14 @@
   border-radius: 15px;
   filter: drop-shadow(-15px 14px 15px rgba(0, 0, 0, 0.59));
   border: 1px solid black;
-  @include apply-at-sm-md-size {
+  margin-bottom: 15%;
+  @include apply-at-sm-size {
+    margin-bottom: 30%;
     width: 85%;
+    margin-top: -20%;
+  }
+  @include apply-at-md-size {
+    margin-top: -8%;
   }
 }
 .image-title-section {
@@ -213,6 +217,7 @@
   height: 441px;
   @include apply-at-sm-md-size {
     height: auto;
+    width: 100%;
   }
 }
 .gallery-image-caption {
