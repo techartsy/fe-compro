@@ -95,6 +95,14 @@ export const Gallery = () => {
       caption: "Karanghawu Morning People, Sukabumi, West Java",
       category: "image",
     },
+    {
+      id: 12,
+      title: "The Colony",
+      image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1651244385/Gallery%20Compro/The_Colony_v2h8ys.jpg',
+      video: "",
+      caption: "Some Ants Playing on Dragon Fruit's Bud",
+      category: "image",
+    },
   ];
 
   const [selectedImage, setSelectedImage] = useState(images[0]);

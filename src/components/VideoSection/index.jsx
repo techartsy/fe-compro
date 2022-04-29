@@ -55,12 +55,6 @@ export const VideoSection = () => {
     beforeChange: (current, next) => setActiveIndex(next)
   };
 
-  // 'Nature'
-  // 'morning mist in Ijen valley, East Java'
-
-  // 'Human Interest'
-  // 'Karanghawu morning people, Sukabumi, West Java'
-
   const videos = [
     {
       id: 4,

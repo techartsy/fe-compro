@@ -101,7 +101,16 @@
     width: 93%;
   }
 }
+.gallery-category {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  @include body;
+  letter-spacing: 0.005em;
+}
 .gallery-photo-slide {
+  margin-bottom: 15%;
   z-index: 2;
   background-color: white;
   position: relative;
@@ -216,6 +225,7 @@
   backface-visibility: hidden;
   height: 441px;
   @include apply-at-sm-md-size {
+    width: 100%;
     height: auto;
     width: 100%;
   }
