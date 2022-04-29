@@ -7,6 +7,7 @@ import rino from "../../static/images/rino.png";
 import braja from "../../static/images/braja.png";
 import daniel from "../../static/images/daniel.png";
 import agung from "../../static/images/agung.png";
+import ncu from "../../static/images/ncu.png";
 import Whatsapp from "../../components/WhatsApp/index";
 import topWave from "../../static/images/top_wave.png";
 import "./index.scss";
@@ -43,6 +44,11 @@ const AboutUs = () => {
       image: darmawan,
       name: "Darmawan Yan Saputra",
       position: "Co Founder",
+    },
+    {
+      image: ncu,
+      name: "Dheasy Nurfadhilah",
+      position: "UI/UX",
     },
   ];
   return (
