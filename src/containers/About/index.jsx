@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import image from "../../static/images/5.png";
-import rando from "../../static/images/rando.png";
+// import rando from "../../static/images/rando.png";
 import darmawan from "../../static/images/darmawan.png";
 import rino from "../../static/images/rino.png";
 import braja from "../../static/images/braja.png";
@@ -20,11 +20,11 @@ const AboutUs = () => {
       name: "Putra Agung Wibisono",
       position: "Co Founder",
     },
-    {
-      image: rando,
-      name: "Rando Bintoro",
-      position: "Co Founder",
-    },
+    // {
+    //   image: rando,
+    //   name: "Rando Bintoro",
+    //   position: "Co Founder",
+    // },
     {
       image: daniel,
       name: "Daniel Erwinsyah",
@@ -134,16 +134,16 @@ const AboutUs = () => {
           <div className="team-list-wrapper">
             {teams.map((item, idx) => {
               return (
-                <div className="team-item">
+                <div className="team-item" key={idx}>
                   <img src={item.image} alt="team" className="team-image" />
                   <div className="name">
                     <strong>
                       <p>{item.name}</p>
                     </strong>
                   </div>
-                  <div className="position">
+                  {/* <div className="position">
                     <p>{item.position}</p>
-                  </div>
+                  </div> */}
                 </div>
               );
             })}
