@@ -1,13 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import image from "../../static/images/5.png";
-// import rando from "../../static/images/rando.png";
-// import darmawan from "../../static/images/darmawan.png";
-// import rino from "../../static/images/rino.png";
-// import braja from "../../static/images/braja.png";
-// import daniel from "../../static/images/daniel.png";
-// import agung from "../../static/images/agung.png";
-// import ncu from "../../static/images/ncu.png";
 import Whatsapp from "../../components/WhatsApp/index";
 import topWave from "../../static/images/top_wave.png";
 import "./index.scss";
@@ -16,7 +9,6 @@ import Footer from "../../components/Footer/index";
 const AboutUs = () => {
   const teams = [
     {
-      // image: agung,
       image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1658482964/Asset%20Techartsy%20Indonesia/Squad%20Photo/Agung_oifcay.png',
       name: "Putra Agung Wibisono",
       position: "Co Founder",
@@ -27,37 +19,31 @@ const AboutUs = () => {
     //   position: "Co Founder",
     // },
     {
-      // image: daniel,
       image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1658482964/Asset%20Techartsy%20Indonesia/Squad%20Photo/Daniel_c0rq1g.png',
       name: "Daniel Erwinsyah",
       position: "Co Founder",
     },
     {
-      // image: rino,
       image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1658482964/Asset%20Techartsy%20Indonesia/Squad%20Photo/Rino_onwkgj.png',
       name: "Rinoto Harto",
       position: "Co Founder",
     },
     {
-      // image: braja,
       image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1658482964/Asset%20Techartsy%20Indonesia/Squad%20Photo/Braja_bpr0ga.png',
       name: "Braja Sifa Satyaputra",
       position: "Co Founder",
     },
     {
-      // image: darmawan,
       image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1658482964/Asset%20Techartsy%20Indonesia/Squad%20Photo/Darmawan_binta7.png',
       name: "Darmawan Yan Saputra",
       position: "Co Founder",
     },
     {
-      // image: ncu,
       image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1658482965/Asset%20Techartsy%20Indonesia/Squad%20Photo/Dheasy_rioytj.png',
       name: "Dheasy Nurfadhilah",
       position: "UI/UX",
     },
     {
-      // image: ayok,
       image: 'https://res.cloudinary.com/dwvzfit8v/image/upload/v1658482965/Asset%20Techartsy%20Indonesia/Squad%20Photo/Ayu_ervmcg.png',
       name: "Dyah Ayu Wulandari",
       position: "UI/UX",

@@ -183,9 +183,12 @@ export const ContactUs = () => {
                 </strong>
               </div>
               <div className="our-address-mid">
-                <p className="item">Megapolitan Cinere</p>
-                <p className="item">Jl. Papandayan J177</p>
-                <p className="item">Depok || 16515</p>
+                {/* <p className="item">Megapolitan Cinere</p>
+                <p className="item">Jl. Papandayan J177</p> */}
+                {/* <p className="item">Depok || 16515</p> */}
+                <p className="item">Jl. Andara 1</p>
+                <p className="item">Pangkalan Jati</p>
+                <p className="item">Depok || 16513</p>
               </div>
               <div className="our-address-contact">
                 <a
