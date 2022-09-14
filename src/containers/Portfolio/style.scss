@@ -51,6 +51,8 @@
   margin-bottom: 100px;
 }
 .portfolio-item {
+  @include directionY;
+  align-items: center;
   margin-right: 2%;
   margin-bottom: 2%;
 }

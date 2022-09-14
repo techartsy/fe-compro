@@ -165,7 +165,7 @@ export const ContactUs = () => {
           <div className="about-right-section">
             <div className="maps">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.608829500092!2d106.79176161431108!3d-6.3150056635543494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eff9c02320a7%3A0xe6d1219a3f773486!2sTechartsy%20Indonesia!5e0!3m2!1sid!2sid!4v1628262562966!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.311786359295!2d106.77792031431152!3d-6.353668663926221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eee50530e1d1%3A0x1f4d5abaddf65260!2sJl.%20Papandayan%20Blok%20J%20No.177%2C%20Limo%2C%20Kec.%20Limo%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016514!5e0!3m2!1sid!2sid!4v1649860975985!5m2!1sid!2sid"
                 width={width === 'lg' ? "540" : '320'}
                 height={width === 'lg' ? "500" : '300'}
                 style={{ border: "1px solid black" }}

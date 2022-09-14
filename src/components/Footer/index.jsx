@@ -3,7 +3,6 @@ import useWindowDimensions from "../../utils/useWindowDimensions";
 import wave from "../../static/images/wave.png";
 import wave_sm from "../../static/images/wave_sm.png";
 import instagram from "../../static/icon/Instagram.png";
-import LinkedIn from "../../static/icon/LinkedIn.png";
 import Behance from "../../static/icon/behance.png";
 import Youtube from "../../static/icon/Youtube.png";
 
@@ -49,24 +48,20 @@ export const Footer = () => {
               </strong>
             </div>
             <div className="media-link">
-              <a rel="noreferrer" href="https://www.behance.net/techartindones" target="_blank">
+              <a rel="noreferrer" href="https://www.instagram.com/techartsy.indonesia/" target="_blank">
                 <img src={instagram} alt="instagram" className="media-icon" />
               </a>
-              {/* <a rel="noreferrer" href="https://www.linkedin.com/in/rinoto-harto/" target="_blank"> */}
-              <a rel="noreferrer" href="https://www.linkedin.com/in/brajasifasatyaputra/" target="_blank">
-                <img src={LinkedIn} alt="instagram" className="media-icon" />
-              </a>
               <a rel="noreferrer" href="https://www.behance.net/techartindones" target="_blank">
-                <img src={Behance} alt="instagram" className="media-icon" />
+                <img src={Behance} alt="behance" className="media-icon" />
               </a>
               <a rel="noreferrer" href="https://www.youtube.com/c/Chanelaleale" target="_blank">
-                <img src={Youtube} alt="instagram" className="media-icon" />
+                <img src={Youtube} alt="youtube" className="media-icon" />
               </a>
             </div>
           </div>
           <div className="copywright">
             <strong>
-              <p>Copyright 2021 &copy; Techartsy.Indonesia.com</p>
+              <p>Copyright 2021 &copy; techartsyindonesia.com</p>
             </strong>
           </div>
         </div>
