@@ -32,11 +32,13 @@ export const Footer = () => {
           </div>
           <div>
             <strong>
-              <p className="address-item">Jl. Papandayan J177</p>
-              <p className="address-item">Megaplitan Cinere</p>
-              <p className="address-item">Limo - Depok</p>
+              {/* <p className="address-item">Jl. Papandayan J177</p> */}
+              {/* <p className="address-item">Megaplitan Cinere</p> */}
+              {/* <p className="address-item">Limo - Depok</p> */}
+              <p className="address-item">Jl. Andara 1</p>
+              <p className="address-item">Cinere - Depok</p>
               <p className="address-item">Jawa Barat</p>
-              <p className="address-item">16515</p>
+              <p className="address-item">16513</p>
             </strong>
           </div>
           <div className="media-section">
